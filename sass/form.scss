@@ -1,0 +1,106 @@
+form{
+    width: 100%;
+    padding: 8px;
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    input {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0.5rem;
+        font-size: 2rem;
+        border: none;
+        background-color: #fff;
+    }
+
+    button{
+        padding: 0.5rem;
+        font-size: 2rem;
+        border: none;
+        background-color: #fff;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        :hover{
+            color: red;
+            
+        }
+    }
+}
+
+header{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    font-size:20px;
+    color: #fff;
+   
+}
+
+.todo_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+
+   
+}
+.todo_lists{
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo{
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+
+    
+}
+li{
+    flex:1;
+}
+
+.trash_btn , .complete_btn {
+   border: none;
+   padding: 1rem;
+   cursor: pointer;
+   font-size: 1rem;
+}
+
+.trash_btn{
+    color: rgb(0, 0, 0);
+    background-color: rgb(249, 1, 1);
+}
+
+.complete_btn{
+    background-color: green;
+    
+    color: black;
+}
+
+.todo_item{
+    padding: 0rem 0.5rem;
+}
+
+.fa-trash , .fa-check{
+    pointer-events: none;
+}
+
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall{
+    transform: translatey(8rem) rotateZ(20deg) ;
+    opacity: 0;
+}
